@@ -12,21 +12,45 @@ header{
         border-radius: 20px;
         width: 10%;
     }
+
+    @media @tablet {
+        .logo {
+            width:20%;
+            margin: 0.5% 2%;
+        }
+    }
+
+    @media @mobile {
+        .logo {
+            width:25%;
+            margin: 0 2%;
+        }
+    }
+
+    
     input{
-        margin-left: 14%;
+        margin-left: 0 auto;
         font-size: 1.8rem;
         text-decoration: none;
         color: white;
         border-radius: 20px;
     }
+
+    @media @mobile {
+        input {
+            width: 100%;
+        }
+    }
+
     .login{
         padding: 1%;
         font-size: 2rem;
-        background-color: 87CEFA;
         background-color: #87CEFA;
         border: none;
         color: white;
     }
+
+
     .signup{
         padding: 1%;
         font-size: 2rem;
@@ -34,10 +58,39 @@ header{
         color: white;
         border-radius: 20px;
         box-shadow: 2px 2px #188fdb;
-        width: 10%;
+        width: 12%;
     }
+
+    @media @tablet {
+        .signup{
+            width: 20%
+        }
+    }
+
+    @media @mobile {
+        .top{
+          display: flex;
+          flex-direction: column;
+          
+        }
+        div{
+            width: 50%;
+        
+        }
+        .login{
+            width: 20%;
+            margin-right: 5px;
+        }
+        .signup{
+            width: 50%;
+            margin-right: 5px;
+        }
+
+    }
+
     
 }
+
 
 .container {
     margin: 1% auto;
@@ -45,19 +98,49 @@ header{
 
     iframe{
         border-radius: 20px;
-        margin-top: 3%;
+        margin-top: 3%; 
     }
+
+    @media @tablet {
+
+        iframe{
+            width: 100%;
+            height: 300px;
+            margin: 5% auto;
+            }
+        } 
+    
+    @media @mobile {
+
+        iframe{
+            width: 90%;
+            height: 250px;
+            margin: 10% 6%;
+            }
+        }
+
+   
+    
 
     h3{
         font-size: 2.5rem;
         margin: 4% 4%;
     }
+
+    @media @mobile{
+        h3{
+            margin: 2% 12%;
+            font-size: 3rem;
+        }
+    }
+
     .middle-wrapper{
 
         .boxes{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
+
 
             .box{
                 width: 30%;
@@ -79,6 +162,12 @@ header{
                 width: 35%;
                 height: auto;
                 border-radius: 80px;
+            }
+
+            @media @mobile {
+                .reviewer-img{
+                    width: 25%;
+                }
             }
             .reviewer-location {
                 display: flex;
@@ -103,6 +192,31 @@ header{
                 font-size: 2rem;
             }
 
+
+        }
+        @media @tablet {
+            .boxes {
+
+                .box{
+                    width: 40%;
+                    height: 300px;
+                }
+
+            }
+        }
+
+        @media @mobile {
+            .boxes {
+
+                .box{
+                    width: 80%;
+                    height: 250px;
+                }
+
+            }
         }
     }
+    
 }
+
+

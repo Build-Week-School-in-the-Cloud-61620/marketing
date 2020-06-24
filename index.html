@@ -10,18 +10,24 @@
 <body>
      <header>
         <img src="design/Logo_School_in_cloud.png" alt="Brand logo" class = "logo">
+        
         <nav class="nav">
             <a href="#">Home</a>
             <a href="#">Learn</a>
             <a href="#">About Us</a>
-            <a href="#">Contact</a>
+            <a href="contact.html">Contact</a>
         </nav>
         <div>
             <input type="search" name="review-search" placeholder="Search here">
             <!-- <img src="design/icons/search-outline.png" alt="search icon" > -->
         </div>
-        <button class="login">Login</button>
-        <button class="signup">Sign Up</button>
+        
+        <button type="button" class="login" onclick="window.open('https://unruffled-volhard-6f47a7.netlify.app/login')" >Login</button>
+        <button type="button" class="signup" onclick="window.open('https://unruffled-volhard-6f47a7.netlify.app/signup')">Sign Up</button>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn">
+            <span class="navicon"></span>
+        </label>
     </header>
    
     <div class="container main">
