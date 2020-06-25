@@ -1,0 +1,64 @@
+header{
+    nav{
+        margin: 0 2% 0 -10%;
+        width: 45%;
+
+        a {
+            margin-left: 5%;
+            font-size: 1.8rem;
+            text-decoration: none;
+            color: white;
+        }
+        
+
+    }
+
+    .menu-btn{
+        display: none;
+    }
+
+    @media @tablet {
+        nav{
+            display: none;
+        }
+    }
+    
+    @media @mobile {
+        .nav{
+            margin: 1% auto;
+            width: 90%;
+        }
+    }
+    
+    // Hamburger Icon css for mobile only
+    //     .menu-icon{
+    //         .navicon:before, .navicon:after{
+    //             background: #333;
+    //             content: '';
+    //             display: block;
+    //             height: 100%;
+    //             position: absolute;
+    //             transition: all .2s ease-out;
+    //             width: 100%; 
+    //         }
+    //         .navicon:before {
+    //             top: 5px;
+    //           }
+    //         .navicon:after{
+    //             top:-5px;
+    //         }
+    //    }
+}
+
+@media @tablet {
+    header{
+        height: 80px;
+    }
+}
+
+@media @mobile {
+    header{
+       height: 70px; 
+    }
+}
+
