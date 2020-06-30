@@ -180,12 +180,6 @@ header .logo img {
   align-items: center;
 }
 
-@media (max-width: 500px){
-  .container {
-    flex-direction: column;
-  }
-}
-
 .container #windows {
   width: 40%;
 }
@@ -214,6 +208,16 @@ header .logo img {
   text-align: center;
   text-decoration: none;
   color: white;
+}
+
+@media (max-width: 500px){
+  .container {
+    flex-direction: column;
+  }
+  .container #windows {
+    width: 80%;
+  }
+
 }
 
 .container2 {
